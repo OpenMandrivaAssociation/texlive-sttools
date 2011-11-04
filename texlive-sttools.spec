@@ -64,6 +64,7 @@ to manipulate numerical lists and arrays.
 %doc %{_texmfdistdir}/doc/latex/sttools/doc/flushend.tex
 %doc %{_texmfdistdir}/doc/latex/sttools/index.html
 %doc %{_texmfdistdir}/doc/latex/sttools/presfull.pdf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -74,3 +75,5 @@ to manipulate numerical lists and arrays.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
