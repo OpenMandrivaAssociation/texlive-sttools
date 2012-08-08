@@ -1,16 +1,16 @@
-# revision 17276
+# revision 26674
 # category Package
 # catalog-ctan /macros/latex/contrib/sttools
-# catalog-date 2007-01-15 00:27:07 +0100
-# catalog-license lppl
+# catalog-date 2012-05-27 12:29:18 +0200
+# catalog-license collection
 # catalog-version undef
 Name:		texlive-sttools
-Version:	20070115
-Release:	2
+Version:	20120527
+Release:	1
 Summary:	Various macros
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/sttools
-License:	LPPL
+License:	COLLECTION
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/sttools.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/sttools.doc.tar.xz
 BuildArch:	noarch
@@ -47,6 +47,7 @@ to manipulate numerical lists and arrays.
 %{_texmfdistdir}/tex/latex/sttools/stabular.sty
 %{_texmfdistdir}/tex/latex/sttools/stfloats.sty
 %{_texmfdistdir}/tex/latex/sttools/texsort.sty
+%doc %{_texmfdistdir}/doc/latex/sttools/README.TEXLIVE
 %doc %{_texmfdistdir}/doc/latex/sttools/doc/cuted.pdf
 %doc %{_texmfdistdir}/doc/latex/sttools/doc/cuted.tex
 %doc %{_texmfdistdir}/doc/latex/sttools/doc/floatpag.pdf
@@ -54,7 +55,6 @@ to manipulate numerical lists and arrays.
 %doc %{_texmfdistdir}/doc/latex/sttools/doc/flushend.pdf
 %doc %{_texmfdistdir}/doc/latex/sttools/doc/flushend.tex
 %doc %{_texmfdistdir}/doc/latex/sttools/index.html
-%doc %{_texmfdistdir}/doc/latex/sttools/presfull.pdf
 
 #-----------------------------------------------------------------------
 %prep
