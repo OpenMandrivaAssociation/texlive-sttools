@@ -1,12 +1,11 @@
-# revision 28013
+# revision 26674
 # category Package
 # catalog-ctan /macros/latex/contrib/sttools
-# catalog-date 2012-10-18 11:44:44 +0200
+# catalog-date 2012-05-27 12:29:18 +0200
 # catalog-license collection
-# catalog-version 1.1
+# catalog-version undef
 Name:		texlive-sttools
-Epoch:		1
-Version:	1.1
+Version:	20120527
 Release:	1
 Summary:	Various macros
 Group:		Publishing
@@ -14,7 +13,6 @@ URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/sttools
 License:	COLLECTION
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/sttools.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/sttools.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/sttools.source.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -49,36 +47,39 @@ to manipulate numerical lists and arrays.
 %{_texmfdistdir}/tex/latex/sttools/stabular.sty
 %{_texmfdistdir}/tex/latex/sttools/stfloats.sty
 %{_texmfdistdir}/tex/latex/sttools/texsort.sty
-%doc %{_texmfdistdir}/doc/latex/sttools/README
-%doc %{_texmfdistdir}/doc/latex/sttools/boundbox.pdf
-%doc %{_texmfdistdir}/doc/latex/sttools/cuted.pdf
-%doc %{_texmfdistdir}/doc/latex/sttools/floatpag.pdf
-%doc %{_texmfdistdir}/doc/latex/sttools/flushend.pdf
-%doc %{_texmfdistdir}/doc/latex/sttools/marginal.pdf
-%doc %{_texmfdistdir}/doc/latex/sttools/midfloat.pdf
-%doc %{_texmfdistdir}/doc/latex/sttools/stabular.pdf
-%doc %{_texmfdistdir}/doc/latex/sttools/stfloats.pdf
-%doc %{_texmfdistdir}/doc/latex/sttools/sttools.pdf
-%doc %{_texmfdistdir}/doc/latex/sttools/texsort.pdf
-#- source
-%doc %{_texmfdistdir}/source/latex/sttools/boundbox.dtx
-%doc %{_texmfdistdir}/source/latex/sttools/cuted.dtx
-%doc %{_texmfdistdir}/source/latex/sttools/floatpag.dtx
-%doc %{_texmfdistdir}/source/latex/sttools/flushend.dtx
-%doc %{_texmfdistdir}/source/latex/sttools/marginal.dtx
-%doc %{_texmfdistdir}/source/latex/sttools/midfloat.dtx
-%doc %{_texmfdistdir}/source/latex/sttools/stabular.dtx
-%doc %{_texmfdistdir}/source/latex/sttools/stfloats.dtx
-%doc %{_texmfdistdir}/source/latex/sttools/sttools.dtx
-%doc %{_texmfdistdir}/source/latex/sttools/sttools.ins
-%doc %{_texmfdistdir}/source/latex/sttools/texsort.dtx
+%doc %{_texmfdistdir}/doc/latex/sttools/README.TEXLIVE
+%doc %{_texmfdistdir}/doc/latex/sttools/doc/cuted.pdf
+%doc %{_texmfdistdir}/doc/latex/sttools/doc/cuted.tex
+%doc %{_texmfdistdir}/doc/latex/sttools/doc/floatpag.pdf
+%doc %{_texmfdistdir}/doc/latex/sttools/doc/floatpag.tex
+%doc %{_texmfdistdir}/doc/latex/sttools/doc/flushend.pdf
+%doc %{_texmfdistdir}/doc/latex/sttools/doc/flushend.tex
+%doc %{_texmfdistdir}/doc/latex/sttools/index.html
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a0 -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Aug 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120527-1
++ Revision: 812882
+- Update to latest release.
+
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20070115-2
++ Revision: 756256
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20070115-1
++ Revision: 719596
+- texlive-sttools
+- texlive-sttools
+- texlive-sttools
+- texlive-sttools
+
