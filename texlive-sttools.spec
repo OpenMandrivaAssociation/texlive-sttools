@@ -7,7 +7,7 @@
 Name:		texlive-sttools
 Epoch:		1
 Version:	1.1
-Release:	4
+Release:	5
 Summary:	Various macros
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/sttools
