@@ -1,13 +1,13 @@
-# revision 28013
+# revision 32659
 # category Package
 # catalog-ctan /macros/latex/contrib/sttools
-# catalog-date 2012-10-18 11:44:44 +0200
+# catalog-date 2014-01-13 12:46:43 +0100
 # catalog-license collection
-# catalog-version 1.1
+# catalog-version 1.2
 Name:		texlive-sttools
 Epoch:		1
-Version:	1.1
-Release:	5
+Version:	1.2
+Release:	1
 Summary:	Various macros
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/sttools
@@ -21,14 +21,12 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-A collection of tools and macros, including: - a document
-"Inside LaTeX2e kernel" (which discusses some of the functions
-of the packages), - miscellaneous float control, - page styles
-for floats, - multipage tabulars, - even columns at end of
-twocolumn region, - switching between one- and two-column
-anywhere, - getting more mileage from \marginpar, - simulating
-the effect of "midfloats", - create a bounding box, - a package
-to manipulate numerical lists and arrays.
+A collection of tools and macros, including: miscellaneous
+float control, page styles for floats, multipage tabulars, even
+columns at end of twocolumn region, switching between one- and
+two-column anywhere, getting more mileage from \marginpar,
+simulating the effect of "midfloats", create a bounding box, a
+package to manipulate numerical lists and arrays.
 
 %post
     %{_sbindir}/texlive.post
