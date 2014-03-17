@@ -1,13 +1,13 @@
-# revision 32659
+# revision 33098
 # category Package
 # catalog-ctan /macros/latex/contrib/sttools
-# catalog-date 2014-01-13 12:46:43 +0100
+# catalog-date 2014-03-04 09:32:54 +0100
 # catalog-license collection
 # catalog-version 1.2
 Name:		texlive-sttools
 Epoch:		1
 Version:	1.2
-Release:	1
+Release:	2
 Summary:	Various macros
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/sttools
@@ -21,12 +21,12 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-A collection of tools and macros, including: miscellaneous
+A collection of tools and macros, providing: miscellaneous
 float control, page styles for floats, multipage tabulars, even
 columns at end of twocolumn region, switching between one- and
 two-column anywhere, getting more mileage from \marginpar,
-simulating the effect of "midfloats", create a bounding box, a
-package to manipulate numerical lists and arrays.
+simulating the effect of "midfloats", a package to manipulate
+numerical lists and arrays.
 
 %post
     %{_sbindir}/texlive.post
@@ -38,7 +38,6 @@ package to manipulate numerical lists and arrays.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/sttools/boundbox.sty
 %{_texmfdistdir}/tex/latex/sttools/cuted.sty
 %{_texmfdistdir}/tex/latex/sttools/floatpag.sty
 %{_texmfdistdir}/tex/latex/sttools/flushend.sty
@@ -47,8 +46,6 @@ package to manipulate numerical lists and arrays.
 %{_texmfdistdir}/tex/latex/sttools/stabular.sty
 %{_texmfdistdir}/tex/latex/sttools/stfloats.sty
 %{_texmfdistdir}/tex/latex/sttools/texsort.sty
-%doc %{_texmfdistdir}/doc/latex/sttools/README
-%doc %{_texmfdistdir}/doc/latex/sttools/boundbox.pdf
 %doc %{_texmfdistdir}/doc/latex/sttools/cuted.pdf
 %doc %{_texmfdistdir}/doc/latex/sttools/floatpag.pdf
 %doc %{_texmfdistdir}/doc/latex/sttools/flushend.pdf
@@ -59,7 +56,6 @@ package to manipulate numerical lists and arrays.
 %doc %{_texmfdistdir}/doc/latex/sttools/sttools.pdf
 %doc %{_texmfdistdir}/doc/latex/sttools/texsort.pdf
 #- source
-%doc %{_texmfdistdir}/source/latex/sttools/boundbox.dtx
 %doc %{_texmfdistdir}/source/latex/sttools/cuted.dtx
 %doc %{_texmfdistdir}/source/latex/sttools/floatpag.dtx
 %doc %{_texmfdistdir}/source/latex/sttools/flushend.dtx
