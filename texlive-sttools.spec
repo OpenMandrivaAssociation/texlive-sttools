@@ -1,13 +1,7 @@
-# revision 33098
-# category Package
-# catalog-ctan /macros/latex/contrib/sttools
-# catalog-date 2014-03-04 09:32:54 +0100
-# catalog-license collection
-# catalog-version 1.2
 Name:		texlive-sttools
 Epoch:		1
-Version:	1.2
-Release:	6
+Version:	2.0
+Release:	1
 Summary:	Various macros
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/sttools
@@ -38,34 +32,10 @@ numerical lists and arrays.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/sttools/cuted.sty
-%{_texmfdistdir}/tex/latex/sttools/floatpag.sty
-%{_texmfdistdir}/tex/latex/sttools/flushend.sty
-%{_texmfdistdir}/tex/latex/sttools/marginal.sty
-%{_texmfdistdir}/tex/latex/sttools/midfloat.sty
-%{_texmfdistdir}/tex/latex/sttools/stabular.sty
-%{_texmfdistdir}/tex/latex/sttools/stfloats.sty
-%{_texmfdistdir}/tex/latex/sttools/texsort.sty
-%doc %{_texmfdistdir}/doc/latex/sttools/cuted.pdf
-%doc %{_texmfdistdir}/doc/latex/sttools/floatpag.pdf
-%doc %{_texmfdistdir}/doc/latex/sttools/flushend.pdf
-%doc %{_texmfdistdir}/doc/latex/sttools/marginal.pdf
-%doc %{_texmfdistdir}/doc/latex/sttools/midfloat.pdf
-%doc %{_texmfdistdir}/doc/latex/sttools/stabular.pdf
-%doc %{_texmfdistdir}/doc/latex/sttools/stfloats.pdf
-%doc %{_texmfdistdir}/doc/latex/sttools/sttools.pdf
-%doc %{_texmfdistdir}/doc/latex/sttools/texsort.pdf
+%{_texmfdistdir}/tex/latex/sttools
+%doc %{_texmfdistdir}/doc/latex/sttools
 #- source
-%doc %{_texmfdistdir}/source/latex/sttools/cuted.dtx
-%doc %{_texmfdistdir}/source/latex/sttools/floatpag.dtx
-%doc %{_texmfdistdir}/source/latex/sttools/flushend.dtx
-%doc %{_texmfdistdir}/source/latex/sttools/marginal.dtx
-%doc %{_texmfdistdir}/source/latex/sttools/midfloat.dtx
-%doc %{_texmfdistdir}/source/latex/sttools/stabular.dtx
-%doc %{_texmfdistdir}/source/latex/sttools/stfloats.dtx
-%doc %{_texmfdistdir}/source/latex/sttools/sttools.dtx
-%doc %{_texmfdistdir}/source/latex/sttools/sttools.ins
-%doc %{_texmfdistdir}/source/latex/sttools/texsort.dtx
+%doc %{_texmfdistdir}/source/latex/sttools
 
 #-----------------------------------------------------------------------
 %prep
