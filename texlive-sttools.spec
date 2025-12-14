@@ -1,6 +1,6 @@
 Name:		texlive-sttools
 Epoch:		1
-Version:	74941
+Version:	76567
 Release:	1
 Summary:	Various macros
 Group:		Publishing
