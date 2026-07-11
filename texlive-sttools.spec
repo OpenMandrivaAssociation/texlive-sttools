@@ -1,49 +1,23 @@
-Name:		texlive-sttools
+%global tl_name sttools
+%global tl_revision 77682
+
+Name:		texlive-%{tl_name}
 Epoch:		1
-Version:	76567
-Release:	1
+Version:	3.5
+Release:	%{tl_revision}.1
 Summary:	Various macros
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/sttools
-License:	COLLECTION
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/sttools.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/sttools.doc.r%{version}.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/sttools.source.r%{version}.tar.xz
+License:	lppl1.3
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/sttools.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/sttools.doc.r%{tl_revision}.tar.xz
+Source2:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/sttools.source.r%{tl_revision}.tar.xz
 BuildArch:	noarch
-BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires(post):	texlive-kpathsea
+BuildSystem:	texlive
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-A collection of tools and macros, providing: miscellaneous
-float control, page styles for floats, multipage tabulars, even
-columns at end of twocolumn region, switching between one- and
-two-column anywhere, getting more mileage from \marginpar,
-simulating the effect of "midfloats", a package to manipulate
-numerical lists and arrays.
+A collection of tools and macros, providing: miscellaneous float
+control, page styles for floats, multipage tabulars, even columns at end
+of twocolumn region, switching between one- and two-column anywhere,
 
-%post
-%{_sbindir}/texlive.post
-
-%postun
-if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-fi
-
-#-----------------------------------------------------------------------
-%files
-%{_texmfdistdir}/tex/latex/sttools
-%doc %{_texmfdistdir}/doc/latex/sttools
-#- source
-%doc %{_texmfdistdir}/source/latex/sttools
-
-#-----------------------------------------------------------------------
-%prep
-%setup -c -a1 -a2
-%autopatch -p1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
